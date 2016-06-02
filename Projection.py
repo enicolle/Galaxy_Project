@@ -8,7 +8,7 @@ def Dx(a, c, theta=[0,0,0]):
     return (math.cos(theta[1])*((math.sin(theta[1])*(a[1]-c[1]))+(math.cos(theta[2])*(a[0]-c[0]))))-(math.sin(theta[1])*(a[2]-c[2]))
 
 def Dy(a, c, theta=[0,0,0]):
-    return (math.sin(theta[0])*((math.cos(theta[1])*(a[2]-c[2]))+(math.sin(theta[1])*((math.sin(theta[2])*(a[1]-c[1]))+((math.cos(theta[2]))*(a[0]-c[0]))))))+(math.cos(theta[0])*(math.cos(theta[2])*(a[1]-c[1]))-(math.sin(theta[2]))*(a[0]-c[0]))
+    return (math.sin(theta[0])*((math.cos(theta[1])*(a[2]-c[2]))+(math.sin(theta[1])*((math.sin(theta[2])*(a[1]-c[1]))+((math.cos(theta[2]))*(a[0]-c[0]))))))+(math.cos(theta[0])*((math.cos(theta[2])*(a[1]-c[1]))-(math.sin(theta[2]))*(a[0]-c[0])))
 
 def Dz(a, c, theta=[0,0,0]):
-    return (math.cos(theta[0])*((math.cos(theta[1])*(a[2]-c[2]))+(math.sin(theta[1])*((math.sin(theta[2])*(a[1]-c[1]))+((math.cos(theta[2]))*(a[0]-c[0]))))))-(math.sin(theta[0])*(math.cos(theta[2])*(a[1]-c[1]))-(math.sin(theta[2]))*(a[0]-c[0]))
+    return (math.cos(theta[0])*((math.cos(theta[1])*(a[2]-c[2]))+(math.sin(theta[1])*((math.sin(theta[2])*(a[1]-c[1]))+((math.cos(theta[2]))*(a[0]-c[0]))))))-(math.sin(theta[0])*((math.cos(theta[2])*(a[1]-c[1]))-(math.sin(theta[2]))*(a[0]-c[0])))
